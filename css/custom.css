@@ -1,0 +1,271 @@
+/* custom.css */
+
+/* Fondo general */
+body {
+    padding-top: 50px; /* Espacio para la navbar fija */
+    color: #959595;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5; /* Fondo general agradable */
+}
+
+/* Estilo de la navbar */
+.navbar {
+    background-color: #ffffff; /* Fondo blanco para la navbar */
+    border-bottom: 1px solid #ddd; /* Borde gris claro debajo de la navbar */
+}
+
+/* Estilo de las cards */
+.card {
+    position: relative;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra para las tarjetas */
+}
+
+/* Estilo del contenedor de imagen en la tarjeta */
+.img-container {
+    width: 100%; /* Asegura que el contenedor de la imagen tome el ancho completo de la tarjeta */
+    height: 200px; /* Ajusta la altura de la imagen según tus necesidades */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+}
+
+.img-container img {
+    width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+    height: 100%; /* Asegura que la imagen se ajuste a la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarla */
+}
+
+/* Estilo del cuerpo de la tarjeta */
+.card-body {
+    flex-grow: 1;
+    overflow: hidden;
+    max-height: 300px; /* Establece una altura máxima para las tarjetas */
+}
+
+/* Estilo de las imágenes del carousel */
+.carousel-item img {
+    max-width: 100%; /* Ajustar al 100% del contenedor */
+    max-height: 400px; /* Altura máxima de 400px */
+    object-fit: contain; /* Contener la imagen dentro del contenedor sin deformarla */
+    margin: 0 auto;
+}
+
+/* Estilo de los controles del carousel */
+.carousel-control-prev, .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-control-prev {
+    left: 330px; /* Ajusta la posición horizontal de la flecha izquierda */
+}
+
+.carousel-control-next {
+    right: 330px; /* Ajusta la posición horizontal de la flecha derecha */
+}
+
+/* Estilo de las secciones de productos */
+.pelotas-container,
+.correas-collares-container,
+.juguetes-accesorios-container {
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para las secciones de productos */
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra para las secciones */
+}
+
+/* Estilo de las filas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Para alinear con el padding de las columnas */
+}
+
+/* Estilo de las columnas */
+.col-sm-6,
+.col-md-3 {
+    padding: 10px;
+}
+
+/* Estilo de las tarjetas */
+.thumbnail {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Borde gris claro para las tarjetas */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra para las tarjetas */
+    overflow: hidden;
+}
+
+/* Hace que las tarjetas ocupen el mismo espacio */
+.featured-product {
+    flex: 1 0 0%;
+}
+
+/* Estilo de la imagen en la tarjeta */
+.thumbnail img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover;
+}
+
+/* Estilo del contenido de la tarjeta */
+.caption {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido verticalmente */
+}
+
+.caption h5 {
+    margin-bottom: 10px;
+}
+
+.caption .price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #f5f5f5; /* Fondo gris claro para el pie de página */
+    padding: 20px 0;
+    border-top: 1px solid #ddd; /* Borde gris claro en la parte superior */
+}
+
+.small-print {
+    text-align: center;
+    color: #333;
+}
+
+.small-print a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none;
+}
+
+.small-print a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de la sección de servicio */
+.container.text-center {
+    background-color: #eee; /* Fondo gris claro para la sección de servicio */
+    padding: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra para la sección de servicio */
+}
+
+.container.text-center h2 {
+    margin-bottom: 20px;
+}
+
+.container.text-center img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Override Bootstrap Classes */
+
+/* Links */
+a {
+    color: rgba(21, 187, 107, 0.759);
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: rgba(13, 138, 42, 0.758);
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar-default {
+    background-color: #fff;
+}
+.navbar-default .navbar-brand {
+    color: #19c162;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: rgb(2, 94, 16);
+    background-color: transparent;
+}
+
+/* Primary Buttons */
+.btn-primary {
+    color: #fff;
+    background-color: rgb(10, 119, 10);
+    border-color: rgb(3, 101, 2);
+}
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #fff;
+    background-color: rgb(19, 142, 19);
+    border-color: rgb(22, 137, 16);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgba(14, 149, 21, 0.881);
+    border-color: rgb(0, 214, 111);
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: rgb(3, 183, 78);
+    border-color: rgb(0, 149, 74);
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+    color: #fff;
+    background-color: rgb(0, 155, 8);
+    border-color: rgb(0, 116, 52);
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: rgb(106, 244, 96);
+    border-color: rgb(98, 244, 96);
+}
